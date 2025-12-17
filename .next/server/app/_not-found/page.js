@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_not-found/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__d1518d7b._.js")
+R.c("server/chunks/ssr/a0f07_next_dist_adc3d2ad._.js")
+R.c("server/chunks/ssr/a0f07_next_dist_esm_build_templates_app-page_1a3a5d0a.js")
+R.c("server/chunks/ssr/[root-of-the-server]__74f72010._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__aba5470d._.js")
+R.c("server/chunks/ssr/a0f07_next_dist_ae29bfed._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__96c29db7._.js")
+R.c("server/chunks/ssr/a0f07_next_dist_client_components_8d2a2732._.js")
+R.c("server/chunks/ssr/a0f07_next_dist_client_components_builtin_forbidden_904b8c7a.js")
+R.c("server/chunks/ssr/Desktop_medical__next-internal_server_app__not-found_page_actions_d12608e9.js")
+R.m(95737)
+module.exports=R.m(95737).exports

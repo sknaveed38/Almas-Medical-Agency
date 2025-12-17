@@ -1,0 +1,1355 @@
+[
+  {
+    "product_id": "TAB000",
+    "brand": "Brufen",
+    "name": "Ibuprofen 400mg",
+    "salt": "Ibuprofen",
+    "pack_size": "15 x 10 tablets",
+    "pricing": {
+      "Regular": 60,
+      "Wholesaler": 40,
+      "Distributor": 20,
+      "Admin": 10,
+      "REGULAR": 90,
+      "WHOLESALER": 85,
+      "DISTRIBUTOR": 80
+    },
+    "price_mrp": 140,
+    "moq": "1",
+    "stock_qty": 0,
+    "category": "Tablets",
+    "image": "/ib 400.jpg",
+    "stock_badge": "Out of stock",
+    "batches": [
+      {
+        "batch_no": "I400-G1",
+        "expiry": "2026-07-01",
+        "qty": 0
+      },
+      {
+        "batch_no": "I400-G2",
+        "expiry": "2027-09-01",
+        "qty": 0
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "3004.90.49",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB001",
+    "name": "Aristatin 10",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 10 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/as10.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB002",
+    "name": "Aristatin 20",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 10 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/ar20.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB003",
+    "name": "Aristatin 40",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 10 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/ar40.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB004",
+    "name": "Aristatin ASP",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 2 x 15  tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/asp.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB005",
+    "name": "Cilniristo 10",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 15 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/cli.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB006",
+    "name": "Clearvas 10",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 2 x 15 tab",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/clea10.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB007",
+    "name": "Clearvas 20",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 10 tab",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/clea20.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB008",
+    "name": "Olsmile 40",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 15 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/olsm.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB009",
+    "name": "Aristomet G1",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 15 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/ard1.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB010",
+    "name": "Aristomet G2",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 15 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/arg2.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB011",
+    "name": "Vildanorm M-500",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 15 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/vil 500.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB012",
+    "name": "Vildanorm M-1000",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 15 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/vil 1000.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB013",
+    "name": "Vildanorm 50",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 15 tablets",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/vil 50.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB014",
+    "name": "Ramlo-AT",
+    "brand": "Ramlo",
+    "salt": "Amolodipine 5mg + Atenolol 50mg",
+    "pack_size": "10 x 2 x 15 Tabs",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Cardiovascular",
+    "image": "/ram at.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO:001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB015",
+    "name": "Siloswift 8",
+    "brand": "Siloswift",
+    "salt": "Silodosin 8mg",
+    "pack_size": "10 x 1 x 10 Cabs",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Urology",
+    "image": "/shos8.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB016",
+    "name": "Siloswift D 8",
+    "brand": "Siloswift",
+    "salt": "Silodosin 8mg + Dutasteride 0.5mg",
+    "pack_size": "10 x 1 x 10 Cabs",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Urology",
+    "image": "/silosD8.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "INF001",
+    "name": "Cpero IV",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "1 X 100ml",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Infusion",
+    "image": "/cpe.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "CRE001",
+    "name": "Footsoul",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "1 x 25 gm",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "cream",
+    "image": "/foot.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "Drop001",
+    "name": "Nozeesyn XYLO",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "1 x 10ml Drops",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Drops",
+    "image": "/noz XYLO.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "Spray001",
+    "name": "Nozeesyn OXY",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "1 x 10ml Spary",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Nasal Spary",
+    "image": "/noz OXL.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB017",
+    "name": "Aplipase 10000",
+    "brand": "Aplipase",
+    "salt": "pancreatin",
+    "pack_size": "10 x 1 x 10 Caps",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Digestive Enzyme",
+    "image": "/apli 1000.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB018",
+    "name": "Aplipase 25000",
+    "brand": "Aplipase",
+    "salt": "pancreatin",
+    "pack_size": "10 x 1 x 10 Caps",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Digestive Enzyme",
+    "image": "/apli.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB019",
+    "name": "Doxisto LB",
+    "brand": "Doxisto",
+    "salt": "Doxycycline + Lactic Acid Bacillus",
+    "pack_size": "10 x 10 Caps",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Antibiotics",
+    "image": "/doxi LB.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB020",
+    "name": "Rabitop DSR",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "20 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Capsules",
+    "image": "/ra DSR.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "syrup001",
+    "name": "Platigud Syrup",
+    "brand": "platigud",
+    "salt": "Carica papaya leaf extract",
+    "pack_size": "1 x 150ml",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Syrup",
+    "image": "/pla.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB021",
+    "name": "Platigud Tab",
+    "brand": "platigud",
+    "salt": "Carica papaya leaf extract",
+    "pack_size": "10 x 1 x 15",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Hematology",
+    "image": "/pal tab.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB022",
+    "name": "Udisto 150",
+    "brand": "Udisto",
+    "salt": "Ursodeoxycholic Acid 150mg",
+    "pack_size": "5 x 2 x 15",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Hepatology",
+    "image": "/udi.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB023",
+    "name": "Udisto 300",
+    "brand": "Udisto",
+    "salt": "Ursodeoxycholic Acid 300mg",
+    "pack_size": "5 x 3 x 15",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/udi 300.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB024",
+    "name": "Piles Care",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "1 x 30 gm",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "cream",
+    "image": "/piles.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB025",
+    "name": "Piles Care",
+    "brand": "Aristo",
+    "salt": "Ayurvedic Formulation",
+    "pack_size": "1 x 60",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Ayurvedic",
+    "image": "/pil tab.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB026",
+    "name": "ORS",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "21gm sachet",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "sachet",
+    "image": "/ors.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB027",
+    "name": "Nimodol Plus",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "10 x 2 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Tablets",
+    "image": "/nimo.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB028",
+    "name": "Bilaa M",
+    "brand": "Billa",
+    "salt": "Bilastine + Montelukast",
+    "pack_size": "10 x 1 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Anti-Allergic",
+    "image": "/bil m.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB029",
+    "name": "Bilaa 20",
+    "brand": "Billa",
+    "salt": "Bilastine 20mg",
+    "pack_size": "10 x 1 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Anti-Allergic",
+    "image": "/bil 20.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB030",
+    "name": "Ticagain 90",
+    "brand": "Ticagain",
+    "salt": "Ticagrelor 90mg",
+    "pack_size": "10 x 1 x 14",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Cardic",
+    "image": "/tica.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB031",
+    "name": "Aristopod 50 DS",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "30ml+SWFI",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "syrup",
+    "image": "/ari 50.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB032",
+    "name": "Aristopod 100 DS",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "30ml+SWFI",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "syrup",
+    "image": "/ari 100.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB033",
+    "name": "Aristopod CV 50 DS",
+    "brand": "Brufen",
+    "salt": "Aristo GX-2 Division",
+    "pack_size": "30ml+SWFI",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "syrup",
+    "image": "/ari cv50.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "N/A",
+    "is_prescription_required": false
+  },
+  {
+    "product_id": "TAB034",
+    "name": "Aristopod 200",
+    "brand": "Aristopod",
+    "salt": "Cefpodoxime 200mg",
+    "pack_size": "10 x 1 x 10 Tab",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Antibiotics",
+    "image": "/ari 200.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB035",
+    "name": "Aristopod CV 325",
+    "brand": "Aristopod",
+    "salt": "Cefpodoxime 200mg + Clavulanic Acid 125mg",
+    "pack_size": "10 x 1 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Antibiotics",
+    "image": "/ari cv.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB036",
+    "name": "Aristomox CV 625",
+    "brand": "Aristomox",
+    "salt": "Amoxicillin 500mg + Clavulanic Acid 125mg",
+    "pack_size": "1 x 10ml Drops",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Antibiotics",
+    "image": "/cv 625.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB037",
+    "name": "Aristonor TZ",
+    "brand": "Aristonor",
+    "salt": "Norfloxacin 400mg + Tinidazole 600mg",
+    "pack_size": "20 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Antibiotics",
+    "image": "/ari tz.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB038",
+    "name": "Linzalife 600",
+    "brand": "Linzalife",
+    "salt": "Linezolid 600mg",
+    "pack_size": "10 x 1 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Antibiotics",
+    "image": "/lin 600.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB039",
+    "name": "Dydrowish",
+    "brand": "Dydrowish",
+    "salt": "Dydrogesterone 10mg",
+    "pack_size": "10 x 1 x 10",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Hormonal",
+    "image": "/dydr.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB040",
+    "name": "Rifaristo 200",
+    "brand": "Rifaristo",
+    "salt": "Rifaximin 200mg",
+    "pack_size": "10 x 1 x 10 Tab",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Gastrointestinal",
+    "image": "/rifa.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB041",
+    "name": "Rifaristo 400",
+    "brand": "Rifaristo",
+    "salt": "Rifaximin 400mg",
+    "pack_size": "10 x 1 x 10 Tab",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Gastrointestinal",
+    "image": "/rif 400.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  },
+  {
+    "product_id": "TAB042",
+    "name": "Rifaristo 550",
+    "brand": "Rifaristo",
+    "salt": "Rifaximin 550mg",
+    "pack_size": "10 x 1 x 10 Tab",
+    "pricing": {
+      "REGULAR": 70,
+      "WHOLESALER": 68,
+      "DISTRIBUTOR": 67
+    },
+    "price_mrp": 100,
+    "moq": 100,
+    "stock_qty": 400,
+    "category": "Gastrointestinal",
+    "image": "/rif 550.jpg",
+    "stock_badge": "In stock",
+    "batches": [
+      {
+        "batch_no": "ARISTO-001",
+        "expiry": "2027-11-30",
+        "qty": 400
+      }
+    ],
+    "gst_rate": 12,
+    "hsn_code": "300490",
+    "is_prescription_required": true
+  }
+]
