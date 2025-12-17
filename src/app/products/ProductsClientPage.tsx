@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo, useEffect } from 'react';
-import ProductCard, { Product } from '@/components/ProductCard';
+import ProductCard, { Product, Batch } from '@/components/ProductCard';
 import { UserRole } from '@/types/roles';
 import { isNearExpiry } from '@/utils/productUtils';
 import { Filter, SortAsc, SortDesc } from 'lucide-react';
@@ -69,7 +69,7 @@ const ProductsClientPage = () => {
         case 'expiry-asc':
             const getEarliestExpiry = (product: typeof a) => {
                 if (!product.batches || product.batches.length === 0) return new Date('9999-12-31');
-                return new Date(Math.min(...product.batches.map(b => new Date(b.expiry).getTime())));
+                return new Date(Math.min(...product.batches.map((b: Batch) => new Date(b.expiry).getTime())));
             };
             return getEarliestExpiry(a).getTime() - getEarliestExpiry(b).getTime();
         default:

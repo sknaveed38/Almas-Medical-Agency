@@ -1,13 +1,9 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import prisma from '@/lib/prisma';
 import { UserRole } from '@/types/roles';
 
-interface RouteContext {
-  params: { id: string };
-}
-
-export async function GET(request: Request, context: RouteContext) {
-  const { id } = context.params;
+export async function GET(request: NextRequest, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;
 
   const product = await prisma.product.findUnique({
     where: { product_id_str: id },
@@ -20,8 +16,8 @@ export async function GET(request: Request, context: RouteContext) {
   }
 }
 
-export async function PUT(request: Request, context: RouteContext) {
-  const { id } = context.params;
+export async function PUT(request: NextRequest, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;
 
   const userRole = request.headers.get('X-User-Role');
   if (userRole !== UserRole.ADMIN) {
@@ -42,8 +38,8 @@ export async function PUT(request: Request, context: RouteContext) {
   }
 }
 
-export async function DELETE(request: Request, context: RouteContext) {
-  const { id } = context.params;
+export async function DELETE(request: NextRequest, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;
   
   const userRole = request.headers.get('X-User-Role');
   if (userRole !== UserRole.ADMIN) {

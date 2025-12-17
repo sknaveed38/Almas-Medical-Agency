@@ -65,9 +65,9 @@ const AdminDashboardPage = () => {
   const handleSaveProduct = async (product: Product) => {
     try {
       let response;
-      if (product.product_id) {
+      if (product.id) {
         // Update existing product
-        response = await fetch(`/api/products/${product.product_id}`, {
+        response = await fetch(`/api/products/${product.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

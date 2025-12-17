@@ -1,7 +1,9 @@
 {
   "version": 1,
   "config": {
-    "env": {},
+    "env": {
+      "DATABASE_URL": "file:./dev.db"
+    },
     "webpack": null,
     "typescript": {
       "ignoreBuildErrors": false

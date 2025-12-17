@@ -1084,7 +1084,11 @@ const _warnonce = (()=>{
 })();
 const _links = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/client/components/links.js [app-client] (ecmascript)");
 const _islocalurl = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/shared/lib/router/utils/is-local-url.js [app-client] (ecmascript)");
-const _types = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/client/components/segment-cache/types.js [app-client] (ecmascript)");
+const _types = (()=>{
+    const e = new Error("Cannot find module '../components/segment-cache/types'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 const _erroronce = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/shared/lib/utils/error-once.js [app-client] (ecmascript)");
 function isModifiedEvent(event) {
     const eventTarget = event.currentTarget;

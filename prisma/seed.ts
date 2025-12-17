@@ -2,9 +2,8 @@ import { PrismaClient, UserRole } from '@prisma/client'
 import { PrismaBetterSqlite3 } from '@prisma/adapter-better-sqlite3'
 import productsData from '../src/data/products.json'
 import bcrypt from 'bcrypt'
-import 'dotenv/config'
 
-const adapter = new PrismaBetterSqlite3({ url: process.env.DATABASE_URL })
+const adapter = new PrismaBetterSqlite3({ url: process.env.DATABASE_URL! })
 const prisma = new PrismaClient({ adapter })
 
 async function main() {
@@ -54,18 +53,20 @@ async function main() {
   for (const productData of productsData) {
     const moq = typeof productData.moq === 'string' ? parseInt(productData.moq, 10) : productData.moq;
     
-    const pricing: { [key: string]: number } = {};
-    if (productData.pricing.REGULAR) pricing.REGULAR = productData.pricing.REGULAR;
-    else if (productData.pricing.Regular) pricing.REGULAR = productData.pricing.Regular;
+    const sourcePricing = productData.pricing as { [key: string]: number }; // Cast to flexible type
+    const pricing: { [key in UserRole]?: number } = {};
 
-    if (productData.pricing.WHOLESALER) pricing.WHOLESALER = productData.pricing.WHOLESALER;
-    else if (productData.pricing.Wholesaler) pricing.WHOLESALER = productData.pricing.Wholesaler;
+    if (sourcePricing.REGULAR) pricing.REGULAR = sourcePricing.REGULAR;
+    else if (sourcePricing.Regular) pricing.REGULAR = sourcePricing.Regular;
 
-    if (productData.pricing.DISTRIBUTOR) pricing.DISTRIBUTOR = productData.pricing.DISTRIBUTOR;
-    else if (productData.pricing.Distributor) pricing.DISTRIBUTOR = productData.pricing.Distributor;
+    if (sourcePricing.WHOLESALER) pricing.WHOLESALER = sourcePricing.WHOLESALER;
+    else if (sourcePricing.Wholesaler) pricing.WHOLESALER = sourcePricing.Wholesaler;
+
+    if (sourcePricing.DISTRIBUTOR) pricing.DISTRIBUTOR = sourcePricing.DISTRIBUTOR;
+    else if (sourcePricing.Distributor) pricing.DISTRIBUTOR = sourcePricing.Distributor;
     
-    if (productData.pricing.ADMIN) pricing.ADMIN = productData.pricing.ADMIN;
-    else if (productData.pricing.Admin) pricing.ADMIN = productData.pricing.Admin;
+    if (sourcePricing.ADMIN) pricing.ADMIN = sourcePricing.ADMIN;
+    else if (sourcePricing.Admin) pricing.ADMIN = sourcePricing.Admin;
 
     await prisma.product.create({
       data: {

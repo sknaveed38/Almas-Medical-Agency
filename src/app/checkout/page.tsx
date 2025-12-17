@@ -242,7 +242,7 @@ const CheckoutPage = () => {
             <Package className="mr-2" /> Order Summary
           </h2>
           {cartItems.map((item) => (
-            <div key={item.product_id} className="flex justify-between text-sm text-gray-700 py-1">
+            <div key={item.id} className="flex justify-between text-sm text-gray-700 py-1">
               <span>{item.name} ({item.quantity}x)</span>
               <span>₹{(item.price * item.quantity).toFixed(2)}</span>
             </div>

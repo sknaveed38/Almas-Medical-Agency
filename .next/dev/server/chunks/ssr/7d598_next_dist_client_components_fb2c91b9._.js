@@ -61,7 +61,7 @@ Object.defineProperty(exports, "HTTPAccessErrorFallback", {
         return HTTPAccessErrorFallback;
     }
 });
-const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
 const _accesserrorstyles = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/styles/access-error-styles.js [app-rsc] (ecmascript)");
 function HTTPAccessErrorFallback({ status, message }) {
     return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
@@ -128,7 +128,7 @@ Object.defineProperty(exports, "default", {
         return NotFound;
     }
 });
-const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
 const _errorfallback = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/http-access-fallback/error-fallback.js [app-rsc] (ecmascript)");
 function NotFound() {
     return /*#__PURE__*/ (0, _jsxruntime.jsx)(_errorfallback.HTTPAccessErrorFallback, {

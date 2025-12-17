@@ -39,7 +39,7 @@ const CartPage = () => {
         {/* Cart Items */}
         <div className="lg:col-span-2 bg-white p-6 rounded-lg shadow-md">
           {cartItems.map((item) => (
-            <div key={item.product_id} className="flex items-center border-b border-gray-200 py-4 last:border-b-0">
+            <div key={item.id} className="flex items-center border-b border-gray-200 py-4 last:border-b-0">
               <div className="w-24 h-24 bg-gray-100 rounded-md flex-shrink-0 flex items-center justify-center">
                 <img src={item.image} alt={item.name} className="max-h-full max-w-full object-contain" />
               </div>
@@ -51,7 +51,7 @@ const CartPage = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <button
-                  onClick={() => handleUpdateQuantity(item.product_id, item.quantity - 1, item.moq)}
+                  onClick={() => handleUpdateQuantity(item.id, item.quantity - 1, item.moq)}
                   disabled={item.quantity <= item.moq}
                   className="p-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
@@ -61,17 +61,17 @@ const CartPage = () => {
                   type="number"
                   value={item.quantity}
                   min={item.moq}
-                  onChange={(e) => handleUpdateQuantity(item.product_id, parseInt(e.target.value, 10), item.moq)}
+                  onChange={(e) => handleUpdateQuantity(item.id, parseInt(e.target.value, 10), item.moq)}
                   className="w-16 px-2 py-1.5 border border-gray-300 rounded-md text-center focus:outline-none focus:ring-1 focus:ring-emerald-500"
                 />
                 <button
-                  onClick={() => handleUpdateQuantity(item.product_id, item.quantity + 1, item.moq)}
+                  onClick={() => handleUpdateQuantity(item.id, item.quantity + 1, item.moq)}
                   className="p-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
                 >
                   <Plus size={16} />
                 </button>
                 <button
-                  onClick={() => removeItem(item.product_id)}
+                  onClick={() => removeItem(item.id)}
                   className="p-1.5 rounded-full bg-red-100 text-red-700 hover:bg-red-200 ml-2"
                 >
                   <Trash2 size={16} />

@@ -238,7 +238,7 @@ const _invarianterror = (()=>{
     throw e;
 })();
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _routeparams = (()=>{
     const e = new Error("Cannot find module '../route-params'");
     e.code = 'MODULE_NOT_FOUND';
@@ -343,7 +343,7 @@ const _invarianterror = (()=>{
     throw e;
 })();
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 function ClientSegmentRoot({ Component, slots, serverProvidedParams }) {
     let params;
     if (serverProvidedParams !== null) {

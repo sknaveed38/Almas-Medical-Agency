@@ -11,7 +11,7 @@ Object.defineProperty(exports, "default", {
         return Forbidden;
     }
 });
-const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-runtime.js [app-rsc] (ecmascript)");
 const _errorfallback = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/http-access-fallback/error-fallback.js [app-rsc] (ecmascript)");
 function Forbidden() {
     return /*#__PURE__*/ (0, _jsxruntime.jsx)(_errorfallback.HTTPAccessErrorFallback, {

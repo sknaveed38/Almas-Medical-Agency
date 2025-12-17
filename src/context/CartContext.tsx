@@ -7,7 +7,7 @@ import { UserRole } from '@/types/roles';
 
 // Define the structure of a cart item
 interface CartItem {
-  product_id: string;
+  id: string;
   name: string;
   brand: string;
   image: string;
@@ -54,7 +54,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const addItem = (product: Product, quantity: number) => {
     setCartItems((prevItems) => {
-      const existingItem = prevItems.find((item) => item.product_id === product.product_id);
+const existingItem = prevItems.find((item) => item.id === product.id);
 
       if (existingItem) {
         // Update quantity of existing item
@@ -64,7 +64,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
           return prevItems;
         }
         return prevItems.map((item) =>
-          item.product_id === product.product_id ? { ...item, quantity: newQuantity } : item
+          item.id === product.id ? { ...item, quantity: newQuantity } : item
         );
       } else {
         // Add new item
@@ -75,7 +75,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         // Safely get price, default to 0 if undefined/null
         const itemPrice = product.pricing?.[currentRole] || product.pricing?.[UserRole.REGULAR] || product.price_mrp || 0;
         return [...prevItems, {
-            product_id: product.product_id,
+            id: product.id,
             name: product.name,
             brand: product.brand,
             image: product.image,
@@ -88,13 +88,13 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const removeItem = (productId: string) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.product_id !== productId));
+    setCartItems((prevItems) => prevItems.filter((item) => item.id !== productId));
   };
 
   const updateItemQuantity = (productId: string, quantity: number) => {
     setCartItems((prevItems) =>
       prevItems
-        .map((item) => (item.product_id === productId ? { ...item, quantity } : item))
+        .map((item) => (item.id === productId ? { ...item, quantity } : item))
         .filter((item) => item.quantity > 0) // Remove if quantity becomes 0 or less
     );
   };

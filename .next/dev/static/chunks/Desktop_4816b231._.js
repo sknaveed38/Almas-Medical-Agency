@@ -761,11 +761,7 @@ const _unresolvedthenable = (()=>{
     throw e;
 })();
 const _errorboundary = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/client/components/error-boundary.js [app-client] (ecmascript)");
-const _matchsegments = (()=>{
-    const e = new Error("Cannot find module './match-segments'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+const _matchsegments = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/client/components/match-segments.js [app-client] (ecmascript)");
 const _disablesmoothscroll = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/shared/lib/router/utils/disable-smooth-scroll.js [app-client] (ecmascript)");
 const _redirectboundary = (()=>{
     const e = new Error("Cannot find module './redirect-boundary'");

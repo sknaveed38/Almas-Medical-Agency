@@ -189,7 +189,7 @@
     function isValidElement(object) {
         return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
     }
-    var React = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+    var React = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
         return null;
     };
     React = {
@@ -285,14 +285,14 @@ var defaultAttributes = {
     "default",
     ()=>Icon
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/medical/node_modules/lucide-react/dist/esm/defaultAttributes.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/medical/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-client] (ecmascript)");
 ;
 ;
 ;
-const Icon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(({ color = "currentColor", size = 24, strokeWidth = 2, absoluteStrokeWidth, className = "", children, iconNode, ...rest }, ref)=>{
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])("svg", {
+const Icon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(({ color = "currentColor", size = 24, strokeWidth = 2, absoluteStrokeWidth, className = "", children, iconNode, ...rest }, ref)=>{
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])("svg", {
         ref,
         ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
         width: size,
@@ -302,7 +302,7 @@ const Icon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medi
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mergeClasses"])("lucide", className),
         ...rest
     }, [
-        ...iconNode.map(([tag, attrs])=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])(tag, attrs)),
+        ...iconNode.map(([tag, attrs])=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])(tag, attrs)),
         ...Array.isArray(children) ? children : [
             children
         ]
@@ -323,14 +323,14 @@ const Icon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medi
     "default",
     ()=>createLucideIcon
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/medical/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/medical/node_modules/lucide-react/dist/esm/Icon.js [app-client] (ecmascript)");
 ;
 ;
 ;
 const createLucideIcon = (iconName, iconNode)=>{
-    const Component = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    const Component = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createElement"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             ref,
             iconNode,
             className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mergeClasses"])(`lucide-${(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$medical$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toKebabCase"])(iconName)}`, className),
@@ -1009,7 +1009,7 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const AppRouterContext = _react.default.createContext(null);
 const LayoutRouterContext = _react.default.createContext(null);
 const GlobalLayoutRouterContext = _react.default.createContext(null);
@@ -1034,7 +1034,7 @@ Object.defineProperty(exports, "useMergedRef", {
         return useMergedRef;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 function useMergedRef(refA, refB) {
     const cleanupA = (0, _react.useRef)(null);
     const cleanupB = (0, _react.useRef)(null);
@@ -1851,8 +1851,8 @@ Object.defineProperty(exports, "useAppDevRenderingIndicator", {
         return useAppDevRenderingIndicator;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-const _nextdevtools = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _nextdevtools = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
 const useAppDevRenderingIndicator = ()=>{
     const [isPending, startTransition] = (0, _react.useTransition)();
     (0, _react.useEffect)(()=>{
@@ -1901,7 +1901,7 @@ _export(exports, {
     }
 });
 const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _isthenable = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/is-thenable.js [app-client] (ecmascript)");
 // The app router state lives outside of React, so we can import the dispatch
 // method directly wherever we need it, rather than passing it around via props
@@ -1990,7 +1990,7 @@ Object.defineProperty(exports, "callServer", {
         return callServer;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _routerreducertypes = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/router-reducer/router-reducer-types.js [app-client] (ecmascript)");
 const _useactionqueue = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/use-action-queue.js [app-client] (ecmascript)");
 async function callServer(actionId, actionArgs) {
@@ -9150,7 +9150,7 @@ _export(exports, {
         return createDevToolsInstrumentedPromise;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const SearchParamsContext = (0, _react.createContext)(null);
 const PathnameContext = (0, _react.createContext)(null);
 const PathParamsContext = (0, _react.createContext)(null);
@@ -9181,8 +9181,8 @@ Object.defineProperty(exports, "AppRouterAnnouncer", {
         return AppRouterAnnouncer;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-const _reactdom = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react-dom/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _reactdom = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react-dom/index.js [app-client] (ecmascript)");
 const ANNOUNCER_TYPE = 'next-route-announcer';
 const ANNOUNCER_ID = '__next-route-announcer__';
 function getAnnouncerNode() {
@@ -9317,7 +9317,7 @@ _export(exports, {
     }
 });
 const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const ServerInsertedHTMLContext = /*#__PURE__*/ _react.default.createContext(null);
 function useServerInsertedHTML(callback) {
     const addInsertedServerHTMLCallback = (0, _react.useContext)(ServerInsertedHTMLContext);
@@ -10844,7 +10844,7 @@ _export(exports, {
         return useDynamicSearchParams;
     }
 });
-const _react = /*#__PURE__*/ _interop_require_default(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _hooksservercontext = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/hooks-server-context.js [app-client] (ecmascript)");
 const _staticgenerationbailout = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/static-generation-bailout.js [app-client] (ecmascript)");
 const _workunitasyncstorageexternal = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js [app-client] (ecmascript)");
@@ -11642,7 +11642,7 @@ _export(exports, {
     }
 });
 const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
 const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js [app-client] (ecmascript)");
 const _segment = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/segment.js [app-client] (ecmascript)");
@@ -11782,7 +11782,7 @@ _export(exports, {
 });
 const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _navigation = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/navigation.js [app-client] (ecmascript)");
 const _redirect = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/redirect.js [app-client] (ecmascript)");
 const _redirecterror = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/redirect-error.js [app-client] (ecmascript)");
@@ -12062,7 +12062,7 @@ _export(exports, {
         return useNavFailureHandler;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _createhreffromurl = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/router-reducer/create-href-from-url.js [app-client] (ecmascript)");
 function handleHardNavError(error) {
     if (error && typeof window !== 'undefined' && window.next.__pendingUrl && (0, _createhreffromurl.createHrefFromUrl)(new URL(window.location.href)) !== (0, _createhreffromurl.createHrefFromUrl)(window.next.__pendingUrl)) {
@@ -12109,7 +12109,7 @@ _export(exports, {
     }
 });
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 function getDomNodeAttributes(node) {
     const result = {};
     for(let i = 0; i < node.attributes.length; i++){
@@ -12183,7 +12183,7 @@ Object.defineProperty(exports, "useUntrackedPathname", {
         return useUntrackedPathname;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js [app-client] (ecmascript)");
 /**
  * This checks to see if the current render has any unknown route parameters that
@@ -12300,7 +12300,7 @@ _export(exports, {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _navigationuntracked = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/navigation-untracked.js [app-client] (ecmascript)");
 const _isnextroutererror = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/is-next-router-error.js [app-client] (ecmascript)");
 const _navfailurehandler = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/nav-failure-handler.js [app-client] (ecmascript)");
@@ -12416,7 +12416,7 @@ Object.defineProperty(exports, "default", {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _gracefuldegradeboundary = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/errors/graceful-degrade-boundary.js [app-client] (ecmascript)"));
 const _errorboundary = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/error-boundary.js [app-client] (ecmascript)");
 const _isbot = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/router/utils/is-bot.js [app-client] (ecmascript)");
@@ -12730,7 +12730,7 @@ Object.defineProperty(exports, "HTTPAccessFallbackBoundary", {
 });
 const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _navigationuntracked = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/navigation-untracked.js [app-client] (ecmascript)");
 const _httpaccessfallback = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/http-access-fallback/http-access-fallback.js [app-client] (ecmascript)");
 const _warnonce = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/utils/warn-once.js [app-client] (ecmascript)");
@@ -12868,7 +12868,7 @@ _export(exports, {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _errorboundary = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/http-access-fallback/error-boundary.js [app-client] (ecmascript)");
 function bailOnRootNotFound() {
     throw Object.defineProperty(new Error('notFound() is not allowed to use in root layout'), "__NEXT_ERROR_CODE", {
@@ -13484,7 +13484,7 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _iserror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/lib/is-error.js [app-client] (ecmascript)"));
 const ownerStacks = new WeakMap();
 function getOwnerStack(error) {
@@ -13687,7 +13687,7 @@ _export(exports, {
         return safeStringifyWithDepth;
     }
 });
-const _safestablestringify = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/safe-stable-stringify/index.js [app-client] (ecmascript)");
+const _safestablestringify = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/safe-stable-stringify/index.js [app-client] (ecmascript)");
 const _terminalloggingconfig = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/next-devtools/userspace/app/terminal-logging-config.js [app-client] (ecmascript)");
 const _forwardlogsshared = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/next-devtools/shared/forward-logs-shared.js [app-client] (ecmascript)");
 const terminalLoggingConfig = (0, _terminalloggingconfig.getTerminalLoggingConfig)();
@@ -14297,7 +14297,7 @@ _export(exports, {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _isnextroutererror = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/is-next-router-error.js [app-client] (ecmascript)");
 const _console = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/lib/console.js [app-client] (ecmascript)");
 const _iserror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/lib/is-error.js [app-client] (ecmascript)"));
@@ -14440,7 +14440,7 @@ Object.defineProperty(exports, "ReplaySsrOnlyErrors", {
         return ReplaySsrOnlyErrors;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _useerrorhandler = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js [app-client] (ecmascript)");
 const _isnextroutererror = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/is-next-router-error.js [app-client] (ecmascript)");
 const _constants = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/errors/constants.js [app-client] (ecmascript)");
@@ -14566,8 +14566,8 @@ _export(exports, {
     }
 });
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-const _nextdevtools = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _nextdevtools = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
 const _notfound = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/not-found.js [app-client] (ecmascript)");
 const SEGMENT_EXPLORER_SIMULATED_ERROR_MESSAGE = 'NEXT_DEVTOOLS_SIMULATED_ERROR';
 function SegmentTrieNode({ type, pagePath }) {
@@ -14698,8 +14698,8 @@ Object.defineProperty(exports, "AppDevOverlayErrorBoundary", {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-const _nextdevtools = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _nextdevtools = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
 const _runtimeerrorhandler = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/dev/runtime-error-handler.js [app-client] (ecmascript)");
 const _errorboundary = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/error-boundary.js [app-client] (ecmascript)");
 const _globalerror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/builtin/global-error.js [app-client] (ecmascript)"));
@@ -15327,7 +15327,7 @@ _export(exports, {
         return useWebSocketPing;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
 const _getsocketurl = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/dev/hot-reloader/get-socket-url.js [app-client] (ecmascript)");
 const _hotreloadertypes = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/server/dev/hot-reloader-types.js [app-client] (ecmascript)");
@@ -15813,11 +15813,11 @@ _export(exports, {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/strip-ansi/index.js [app-client] (ecmascript)"));
 const _formatwebpackmessages = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/format-webpack-messages.js [app-client] (ecmascript)"));
 const _shared = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/dev/hot-reloader/shared.js [app-client] (ecmascript)");
-const _nextdevtools = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
+const _nextdevtools = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/next-devtools/index.js (raw)");
 const _replayssronlyerrors = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js [app-client] (ecmascript)");
 const _appdevoverlayerrorboundary = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js [app-client] (ecmascript)");
 const _useerrorhandler = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js [app-client] (ecmascript)");
@@ -16271,7 +16271,7 @@ _export(exports, {
 const _interop_require_default = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
 const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
 const _routerreducertypes = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/router-reducer/router-reducer-types.js [app-client] (ecmascript)");
 const _createhreffromurl = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/router-reducer/create-href-from-url.js [app-client] (ecmascript)");
@@ -17658,7 +17658,7 @@ _export(exports, {
 });
 const _routerreducertypes = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/router-reducer/router-reducer-types.js [app-client] (ecmascript)");
 const _routerreducer = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/router-reducer/router-reducer.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 const _isthenable = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/is-thenable.js [app-client] (ecmascript)");
 const _types = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/segment-cache/types.js [app-client] (ecmascript)");
 const _prefetch = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/segment-cache/prefetch.js [app-client] (ecmascript)");
@@ -18004,7 +18004,7 @@ _export(exports, {
 const _types = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/segment-cache/types.js [app-client] (ecmascript)");
 const _cachekey = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/segment-cache/cache-key.js [app-client] (ecmascript)");
 const _scheduler = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/components/segment-cache/scheduler.js [app-client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 // Tracks the most recently navigated link instance. When null, indicates
 // the current navigation was not initiated by a link click.
 let linkForMostRecentNavigation = null;
@@ -18319,7 +18319,7 @@ _export(exports, {
 });
 const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/medical/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
 const _formaturl = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/router/utils/format-url.js [app-client] (ecmascript)");
 const _approutercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [app-client] (ecmascript)");
 const _usemergedref = __turbopack_context__.r("[project]/Desktop/node_modules/next/dist/client/use-merged-ref.js [app-client] (ecmascript)");

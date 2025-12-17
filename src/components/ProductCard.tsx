@@ -8,7 +8,7 @@ import { isNearExpiry, getSoonestExpiry } from '@/utils/productUtils'; // Import
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext'; // Import useCart
 
-interface Batch {
+export interface Batch {
   batch_no: string;
   expiry: string; // YYYY-MM-DD
   qty: number;

@@ -1,15 +1,14 @@
 "use client";
 
-import { products } from '@/data/products';
+import { useEffect, useState, useRef } from 'react';
 import { notFound } from 'next/navigation';
 import { ShoppingCart, CheckCircle, Shield, Truck, CalendarDays, Stethoscope } from 'lucide-react';
 import { useRole } from '@/context/RoleContext';
 import { UserRole } from '@/types/roles';
 import { isNearExpiry } from '@/utils/productUtils';
-import { Product } from '@/components/ProductCard'; // Import Product interface
+import { Product, Batch } from '@/components/ProductCard';
 import Link from 'next/link';
-import { useCart } from '@/context/CartContext'; // Import useCart
-import { useRef, useState } from 'react'; // Import useRef and useState
+import { useCart } from '@/context/CartContext';
 
 interface ProductPageProps {
   params: {
@@ -20,13 +19,70 @@ interface ProductPageProps {
 const ProductDetailPage = ({ params }: ProductPageProps) => {
   const { productId } = params;
   const { currentRole, isLoggedIn } = useRole();
-  const { addItem } = useCart(); // Use cart context
-  const quantityRef = useRef<HTMLInputElement>(null); // Ref for quantity input
+  const { addItem } = useCart();
+  const quantityRef = useRef<HTMLInputElement>(null);
   
-  const product: Product | undefined = products.find((p) => p.product_id === productId);
+  const [product, setProduct] = useState<Product | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchProduct() {
+      try {
+        setLoading(true);
+        const res = await fetch(`/api/products/${productId}`);
+        
+        if (!res.ok) {
+          if (res.status === 404) {
+            setError('Product not found');
+            setProduct(null);
+            return;
+          }
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        
+        const fetchedProduct = await res.json();
+        
+        const parsedProduct: Product = {
+          ...fetchedProduct,
+          pricing: fetchedProduct.pricing ? JSON.parse(fetchedProduct.pricing) : {},
+          batches: fetchedProduct.batches ? JSON.parse(fetchedProduct.batches) : [],
+        };
+        
+        setProduct(parsedProduct);
+      } catch (err: any) {
+        console.error("Failed to fetch product:", err);
+        setError(err.message || "An unexpected error occurred.");
+        setProduct(null);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchProduct();
+  }, [productId]);
+
+  if (loading) {
+    return (
+      <div className="container mx-auto px-4 py-12 text-center text-gray-600">
+        Loading product details...
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="container mx-auto px-4 py-12 text-center text-red-600">
+        Error: {error}
+      </div>
+    );
+  }
 
   if (!product) {
-    notFound();
+    return (
+      <div className="container mx-auto px-4 py-12 text-center text-gray-600">
+        Product not found.
+      </div>
+    );
   }
 
   const price = product.pricing[currentRole] || product.pricing[UserRole.REGULAR];
@@ -127,7 +183,7 @@ const ProductDetailPage = ({ params }: ProductPageProps) => {
               <div className="mt-6 border-t pt-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-3">Available Batches</h3>
                 <ul className="space-y-2">
-                  {product.batches.map((batch) => {
+                  {product.batches.map((batch: Batch) => {
                     const expiryDate = new Date(batch.expiry);
                     const now = new Date();
                     const threeMonthsFromNow = new Date();
