@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H localhost",
-    "build": "prisma migrate deploy --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma && prisma db seed --force && next build",
+    "build": "prisma migrate deploy && prisma db seed && next build",
     "start": "next start",
     "lint": "next lint"
   },
