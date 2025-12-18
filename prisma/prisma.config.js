@@ -1,4 +1,4 @@
-const { PrismaLibSQL } = require('@prisma/adapter-libsql');
+const { PrismaLibSql } = require('@prisma/adapter-libsql');
 
 module.exports = {
   datasources: {

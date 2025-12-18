@@ -1,5 +1,5 @@
 import { PrismaClient, UserRole } from '@prisma/client'
-import { PrismaLibSQL } from '@prisma/adapter-libsql'
+import { PrismaLibSql } from '@prisma/adapter-libsql'
 import productsData from '../src/data/products.json'
 import bcrypt from 'bcrypt'
 
