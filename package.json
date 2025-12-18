@@ -15,10 +15,10 @@
     "better-sqlite3": "^12.5.0",
     "jspdf": "^3.0.4",
     "jspdf-autotable": "^5.0.2",
-    "lucide-react": "^0.378.0",
+    "lucide-react": "^0.561.0",
     "next": "^16.0.10",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
@@ -28,8 +28,8 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.22",
     "dotenv": "^17.2.3",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.0.10",
     "glob": "^13.0.0",
     "postcss": "^8",
     "prisma": "^7.1.0",
