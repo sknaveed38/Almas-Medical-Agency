@@ -3,7 +3,7 @@ import { PrismaLibSql } from '@prisma/adapter-libsql'
 import productsData from '../src/data/products.json'
 import bcrypt from 'bcrypt'
 
-const adapter = new PrismaLibSQL({ url: process.env.DATABASE_URL! })
+const adapter = new PrismaLibSql({ url: process.env.DATABASE_URL! })
 const prisma = new PrismaClient({ adapter })
 
 async function main() {
