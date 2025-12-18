@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from 'next/server';
-import prisma from '@/lib/prisma';
+import { prisma } from '@/lib/prisma';
 import { UserRole } from '@/types/roles';
 
 export async function GET(request: NextRequest, context: { params: Promise<{ id: string }> }) {
