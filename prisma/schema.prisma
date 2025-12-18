@@ -3,7 +3,7 @@
 
 generator client {
   provider   = "prisma-client-js"
-  configFile = "prisma.config.ts"
+  configFile = "prisma.config.js"
 }
 
 datasource db {
