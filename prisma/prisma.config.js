@@ -1,9 +1,9 @@
-const { PrismaBetterSqlite3 } = require('@prisma/adapter-better-sqlite3');
+const { PrismaLibSQL } = require('@prisma/adapter-libsql');
 
 module.exports = {
   datasources: {
     db: {
-      adapter: new PrismaBetterSqlite3({
+      adapter: new PrismaLibSQL({
         url: process.env.DATABASE_URL,
       }),
     },
