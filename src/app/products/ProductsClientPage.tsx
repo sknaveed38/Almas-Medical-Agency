@@ -19,6 +19,7 @@ const ProductsClientPage = () => {
     const fetchProducts = async () => {
       const res = await fetch('/api/products');
       const data = await res.json();
+      console.log('API data:', data);
       setProducts(data);
     };
 
@@ -79,6 +80,8 @@ const ProductsClientPage = () => {
 
     return filtered;
   }, [products, selectedCategory, selectedBrand, sortBy, showNearExpiry]);
+
+  console.log('Filtered and sorted products:', filteredAndSortedProducts);
 
   return (
     <div className="container mx-auto px-4 py-8">
