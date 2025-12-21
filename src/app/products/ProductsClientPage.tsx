@@ -17,10 +17,19 @@ const ProductsClientPage = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await fetch('/api/products');
-      const data = await res.json();
-      console.log('API data:', data);
-      setProducts(data);
+      try {
+        const res = await fetch('/api/products');
+        console.log('API response status:', res.status);
+        if (!res.ok) {
+          console.error('Failed to fetch products:', res.statusText);
+          return;
+        }
+        const data = await res.json();
+        console.log('API data:', data);
+        setProducts(data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
     };
 
     fetchProducts();

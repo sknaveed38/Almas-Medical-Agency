@@ -16,6 +16,7 @@ export interface Batch {
 
 export interface Product { // Exported for productUtils.ts
   id: string;
+  product_id_str: string;
   brand: string;
   name: string;
   salt: string; // Added salt property

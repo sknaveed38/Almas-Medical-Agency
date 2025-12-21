@@ -58,13 +58,13 @@ const ProductList: React.FC<ProductListProps> = ({ onEdit, onDelete, refreshTrig
                 <td className="py-2 px-4 border-b">{product.brand}</td>
                 <td className="py-2 px-4 border-b">{product.category}</td>
                 <td className="py-2 px-4 border-b">{product.stock_qty}</td>
-                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.REGULAR]?.toFixed(2) || 'N/A'}</td>
-                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.WHOLESALER]?.toFixed(2) || 'N/A'}</td>
-                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.DISTRIBUTOR]?.toFixed(2) || 'N/A'}</td>
-                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.ADMIN]?.toFixed(2) || 'N/A'}</td>
+                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.REGULAR.toUpperCase()]?.toFixed(2) || 'N/A'}</td>
+                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.WHOLESALER.toUpperCase()]?.toFixed(2) || 'N/A'}</td>
+                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.DISTRIBUTOR.toUpperCase()]?.toFixed(2) || 'N/A'}</td>
+                <td className="py-2 px-4 border-b text-right">₹{product.pricing[UserRole.ADMIN.toUpperCase()]?.toFixed(2) || 'N/A'}</td>
                 <td className="py-2 px-4 border-b">
                   <button onClick={() => onEdit(product)} className="text-emerald-600 hover:underline mr-4">Edit</button>
-                  <button onClick={() => onDelete(product.id)} className="text-red-600 hover:underline">Delete</button>
+                  <button onClick={() => onDelete(product.product_id_str)} className="text-red-600 hover:underline">Delete</button>
                 </td>
               </tr>
             ))}

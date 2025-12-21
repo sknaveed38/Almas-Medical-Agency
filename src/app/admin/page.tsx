@@ -67,7 +67,7 @@ const AdminDashboardPage = () => {
       let response;
       if (product.id) {
         // Update existing product
-        response = await fetch(`/api/products/${product.id}`, {
+        response = await fetch(`/api/products/${product.product_id_str}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
