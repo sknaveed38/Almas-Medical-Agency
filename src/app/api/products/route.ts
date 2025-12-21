@@ -6,7 +6,6 @@ export const dynamic = 'force-dynamic'; // Ensures the route is always re-render
 export async function GET() {
 
   const products = await prisma.product.findMany();
-  console.log('Products from API:', products);
   return NextResponse.json(products);
 }
 

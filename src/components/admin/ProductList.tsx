@@ -21,9 +21,10 @@ const ProductList: React.FC<ProductListProps> = ({ onEdit, onDelete, refreshTrig
         throw new Error(`HTTP error! status: ${res.status}`);
       }
       const data = await res.json();
+      console.log('ProductList: API data received:', data);
       setProducts(data);
     } catch (error) {
-      console.error("Failed to fetch products:", error);
+      console.error("Failed to fetch products in ProductList:", error);
       // Optionally, set an error state or show a message to the user
     }
   };
@@ -32,6 +33,8 @@ const ProductList: React.FC<ProductListProps> = ({ onEdit, onDelete, refreshTrig
   useEffect(() => {
     fetchProducts();
   }, [refreshTrigger]); // Dependency on refreshTrigger
+
+  console.log('ProductList: products state for rendering:', products);
 
   return (
     <div className="bg-white p-6 rounded-lg shadow mb-8">

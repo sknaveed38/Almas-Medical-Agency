@@ -25,7 +25,6 @@ const ProductsClientPage = () => {
           return;
         }
         const data = await res.json();
-        console.log('API data:', data);
         setProducts(data);
       } catch (error) {
         console.error('Error fetching products:', error);
