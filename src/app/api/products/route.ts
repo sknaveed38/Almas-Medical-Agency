@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
+export const dynamic = 'force-dynamic'; // Ensures the route is always re-rendered
+
 export async function GET() {
 
   const products = await prisma.product.findMany();

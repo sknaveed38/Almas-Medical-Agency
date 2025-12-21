@@ -25,6 +25,11 @@ export async function PUT(request: NextRequest, context: { params: Promise<{ id:
   }
 
   const updatedProductData = await request.json();
+
+  // Remove fields that should not be updated by the form
+  delete updatedProductData.id;
+  delete updatedProductData.createdAt;
+  delete updatedProductData.updatedAt;
   
   try {
     const updatedProduct = await prisma.product.update({
