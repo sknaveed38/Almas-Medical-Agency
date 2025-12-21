@@ -59,12 +59,12 @@ const ProductsClientPage = () => {
         case 'name-asc':
           return a.name.localeCompare(b.name);
         case 'price-asc':
-          const priceA = a.pricing[UserRole.REGULAR];
-          const priceB = b.pricing[UserRole.REGULAR];
+          const priceA = a.pricing[UserRole.REGULAR.toUpperCase()];
+          const priceB = b.pricing[UserRole.REGULAR.toUpperCase()];
           return priceA - priceB;
         case 'price-desc':
-          const priceADesc = a.pricing[UserRole.REGULAR];
-          const priceBDesc = b.pricing[UserRole.REGULAR];
+          const priceADesc = a.pricing[UserRole.REGULAR.toUpperCase()];
+          const priceBDesc = b.pricing[UserRole.REGULAR.toUpperCase()];
           return priceBDesc - priceADesc;
         case 'expiry-asc':
             const getEarliestExpiry = (product: typeof a) => {

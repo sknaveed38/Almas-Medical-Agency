@@ -12,7 +12,14 @@ async function main() {
 
   const product1 = await prisma.product.upsert({
     where: { product_id_str: 'PROD001' },
-    update: {},
+    update: {
+      pricing: {
+        "REGULAR": 100.0,
+        "WHOLESALER": 80.0,
+        "DISTRIBUTOR": 70.0,
+        "ADMIN": 60.0
+      },
+    },
     create: {
       product_id_str: 'PROD001',
       brand: 'Sample Brand',
@@ -29,8 +36,10 @@ async function main() {
       gst_rate: 12.0,
       hsn_code: '30049099',
       pricing: {
-        "wholesale": 80.0,
-        "distributor": 70.0
+        "REGULAR": 100.0,
+        "WHOLESALER": 80.0,
+        "DISTRIBUTOR": 70.0,
+        "ADMIN": 60.0
       },
       batches: [
         {
