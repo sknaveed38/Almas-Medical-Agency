@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { useRole } from '@/context/RoleContext'; // Import useRole
+import { useRole } from '@/context/RoleContext';
 
 const AdminLoginPage = () => {
   const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ const AdminLoginPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  const { login } = useRole(); // Get the login function from context
+  const { login } = useRole();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,7 +30,7 @@ const AdminLoginPage = () => {
       const data = await response.json();
 
       if (response.ok) {
-        login(data.user.email, data.role, data.token); // Use context's login function
+        login(data.user.email, data.role, data.token);
         router.push('/admin');
       } else {
         setError(data.message || 'Login failed. Please check your credentials.');
@@ -44,8 +44,15 @@ const AdminLoginPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+    <div
+      className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+      style={{
+        backgroundImage: 'url(/login.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="max-w-md w-full space-y-8 p-10 bg-white bg-opacity-90 rounded-2xl shadow-2xl fade-in-up">
         <h2 className="text-2xl font-bold text-center text-gray-800">Admin Login</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -81,7 +88,7 @@ const AdminLoginPage = () => {
             {loading ? 'Logging in...' : 'Login'}
           </button>
         </form>
-        <p className="text-center text-sm text-gray-600 mt-4 flex justify-center space-x-2">
+        <p className="text-center text-sm text-gray-600 mt-4 flex justify-center space-x-2 flex-wrap">
           <Link href="/" className="font-medium text-emerald-600 hover:text-emerald-500">
             Go back to home
           </Link>
@@ -100,10 +107,6 @@ const AdminLoginPage = () => {
           <span className="text-gray-400">|</span>
           <Link href="/return-policy" className="font-medium text-gray-600 hover:text-emerald-500">
             Return Policy
-          </Link>
-          <span className="text-gray-400">|</span>
-          <Link href="/admin/login" className="font-medium text-emerald-600 hover:text-emerald-500">
-            Admin Login
           </Link>
         </p>
       </div>

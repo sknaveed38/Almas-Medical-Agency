@@ -5,7 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { RoleProvider } from "@/context/RoleContext";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import { CartProvider } from "@/context/CartContext"; // Import CartProvider
+import { CartProvider } from "@/context/CartContext";
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-gray-50`}>
         <RoleProvider>
-          <CartProvider> {/* Wrap with CartProvider */}
+          <CartProvider>
+            <Toaster position="top-center" reverseOrder={false} />
             <Header />
             <main>{children}</main>
             <Footer />

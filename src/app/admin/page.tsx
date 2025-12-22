@@ -1,22 +1,26 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation'; // Import useRouter
+import { useRouter } from 'next/navigation';
 import { adminSalesData } from '@/data/admin';
-import { Upload, BarChart, Lock, PlusCircle } from 'lucide-react';
+import { Upload, BarChart, PlusCircle } from 'lucide-react';
 import { useRole } from '@/context/RoleContext';
 import { UserRole } from '@/types/roles';
 import ProductList from '@/components/admin/ProductList';
 import ProductForm from '@/components/admin/ProductForm';
 import { Product } from '@/components/ProductCard';
-import UserManagement from '@/components/admin/UserManagement'; // Import UserManagement
+import UserManagement from '@/components/admin/UserManagement';
+import ConfirmationModal from '@/components/common/ConfirmationModal';
+import toast from 'react-hot-toast';
 
 const AdminDashboardPage = () => {
-  const { currentRole, loading: roleLoading } = useRole(); // Get loading state from useRole
+  const { currentRole, loading: roleLoading } = useRole();
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [refreshProducts, setRefreshProducts] = useState(false);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [productToDelete, setProductToDelete] = useState<string | null>(null);
   const router = useRouter();
 
   const handleOpenModal = (product: Product | null) => {
@@ -39,10 +43,10 @@ const AdminDashboardPage = () => {
 
   const handleUpload = () => {
     if (selectedFile) {
-      alert(`Simulating upload of ${selectedFile.name}. (Actual upload logic not implemented)`);
+      toast.success(`Simulating upload of ${selectedFile.name}.`);
       setSelectedFile(null);
     } else {
-      alert('Please select an Excel file to upload.');
+      toast.error('Please select an Excel file to upload.');
     }
   };
 
@@ -60,71 +64,70 @@ const AdminDashboardPage = () => {
     );
   }
 
-  // ... (rest of the component)
-
   const handleSaveProduct = async (product: Product) => {
     try {
       let response;
       if (product.id) {
-        // Update existing product
         response = await fetch(`/api/products/${product.product_id_str}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
-            'X-User-Role': currentRole, // Send role for authorization
+            'X-User-Role': currentRole,
           },
           body: JSON.stringify(product),
         });
       } else {
-        // Add new product
         response = await fetch('/api/products', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-User-Role': currentRole, // Send role for authorization
+            'X-User-Role': currentRole,
           },
           body: JSON.stringify(product),
         });
       }
 
       if (response.ok) {
-        console.log('Product saved successfully!');
-        setRefreshProducts(prev => !prev); // Toggle state to trigger refresh
+        toast.success('Product saved successfully!');
+        setRefreshProducts(prev => !prev);
         handleCloseModal();
       } else {
         const errorData = await response.json();
-        console.error('Failed to save product:', errorData.message || response.statusText);
-        alert(`Failed to save product: ${errorData.message || response.statusText}`);
+        toast.error(`Failed to save product: ${errorData.message || response.statusText}`);
       }
     } catch (error) {
-      console.error('Error saving product:', error);
-      alert('An error occurred while saving the product.');
+      toast.error('An error occurred while saving the product.');
     }
   };
 
-  const handleDeleteProduct = async (productId: string) => {
-    if (!window.confirm('Are you sure you want to delete this product?')) {
-      return;
-    }
+  const handleDeleteConfirmation = (productId: string) => {
+    setProductToDelete(productId);
+    setIsDeleteModalOpen(true);
+  };
+
+  const handleDeleteProduct = async () => {
+    if (!productToDelete) return;
+
     try {
-      const response = await fetch(`/api/products/${productId}`, {
+      const response = await fetch(`/api/products/${productToDelete}`, {
         method: 'DELETE',
         headers: {
-          'X-User-Role': currentRole, // Send role for authorization
+          'X-User-Role': currentRole,
         },
       });
 
       if (response.ok) {
-        console.log('Product deleted successfully!');
-        setRefreshProducts(prev => !prev); // Trigger refresh
+        toast.success('Product deleted successfully!');
+        setRefreshProducts(prev => !prev);
       } else {
         const errorData = await response.json();
-        console.error('Failed to delete product:', errorData.message || response.statusText);
-        alert(`Failed to delete product: ${errorData.message || response.statusText}`);
+        toast.error(`Failed to delete product: ${errorData.message || response.statusText}`);
       }
     } catch (error) {
-      console.error('Error deleting product:', error);
-      alert('An error occurred while deleting the product.');
+      toast.error('An error occurred while deleting the product.');
+    } finally {
+      setIsDeleteModalOpen(false);
+      setProductToDelete(null);
     }
   };
 
@@ -141,8 +144,7 @@ const AdminDashboardPage = () => {
         </button>
       </div>
 
-      {/* Product List */}
-      <ProductList onEdit={(product) => handleOpenModal(product)} onDelete={handleDeleteProduct} refreshTrigger={refreshProducts} />
+      <ProductList onEdit={(product) => handleOpenModal(product)} onDelete={handleDeleteConfirmation} refreshTrigger={refreshProducts} />
 
       {isModalOpen && (
         <ProductForm
@@ -152,10 +154,16 @@ const AdminDashboardPage = () => {
         />
       )}
 
-      {/* User Management Section */}
+      <ConfirmationModal
+        isOpen={isDeleteModalOpen}
+        onClose={() => setIsDeleteModalOpen(false)}
+        onConfirm={handleDeleteProduct}
+        title="Confirm Deletion"
+        message="Are you sure you want to delete this product? This action cannot be undone."
+      />
+
       <UserManagement />
 
-      {/* Bulk Excel Upload */}
       <div className="bg-white p-6 rounded-lg shadow mb-8">
         <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
           <Upload className="w-6 h-6 text-blue-500 mr-2" /> Bulk Inventory Upload (Excel)
@@ -183,7 +191,6 @@ const AdminDashboardPage = () => {
         {selectedFile && <p className="mt-2 text-sm text-gray-600">Selected file: {selectedFile.name}</p>}
       </div>
 
-      {/* Sales Charts */}
       <div className="bg-white p-6 rounded-lg shadow mb-8">
         <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
           <BarChart className="w-6 h-6 text-purple-500 mr-2" /> Monthly Sales Overview

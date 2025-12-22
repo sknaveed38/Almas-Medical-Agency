@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useRole } from '@/context/RoleContext';
-import { UserRole } from '@/types/roles'; // Ensure UserRole is imported
+import { UserRole } from '@/types/roles';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -26,10 +26,8 @@ const LoginPage = () => {
 
       if (response.ok) {
         const { token, user } = await response.json();
-        // Simulate storing token and user role
-        login(user.email, user.role, token); // Use the login function from context
+        login(user.email, user.role, token);
         
-        // Redirect based on role or to a default dashboard
         if (user.role === UserRole.ADMIN) {
           router.push('/admin');
         } else {
@@ -46,8 +44,15 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
+    <div
+      className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+      style={{
+        backgroundImage: 'url(/login.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="max-w-md w-full space-y-8 p-10 bg-white bg-opacity-90 rounded-2xl shadow-2xl fade-in-up">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Client Portal Login
@@ -56,7 +61,7 @@ const LoginPage = () => {
             Access your B2B dashboard
           </p>
         </div>
-        <form className="mt-8 space-y-6 bg-white p-8 shadow-lg rounded-lg" onSubmit={handleSubmit}>
+        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
               <label htmlFor="email-address" className="sr-only">
